@@ -1,0 +1,44 @@
+-
+    - POST
+    - 'https://roomlio-api/RoomHistory'
+    - { headers: { Authorization: 'Bearer foo-key' }, json: { roomKey: room-key, limit: 10 } }
+-
+    - POST
+    - 'https://roomlio-api/RoomHistory'
+    - { headers: { Authorization: 'Bearer foo-key' }, json: { roomID: room-id, limit: 15 } }
+-
+    - POST
+    - 'https://roomlio-api/UserRooms'
+    - { headers: { Authorization: 'Bearer foo-key' }, json: { userID: user-id } }
+-
+    - POST
+    - 'https://roomlio-api/UserUnreadMessages'
+    - { headers: { Authorization: 'Bearer foo-key' }, json: { userID: user-id } }
+-
+    - POST
+    - 'https://roomlio-api/UserUnreadMessages'
+    - { headers: { Authorization: 'Bearer foo-key' }, json: { widgetID: widget-id } }
+-
+    - POST
+    - 'https://roomlio-api/WidgetCreate'
+    - { headers: { Authorization: 'Bearer foo-key' }, json: { name: widget-name } }
+-
+    - POST
+    - 'https://roomlio-api/Widgets'
+    - { headers: { Authorization: 'Bearer foo-key' }, json: {  } }
+-
+    - POST
+    - 'https://roomlio-api/WidgetOperators'
+    - { headers: { Authorization: 'Bearer foo-key' }, json: { widgetID: widget-id } }
+-
+    - POST
+    - 'https://roomlio-api/WidgetOperatorsAdd'
+    - { headers: { Authorization: 'Bearer foo-key' }, json: { widgetID: widget-id, userIDs: [user-id-1] } }
+-
+    - POST
+    - 'https://roomlio-api/WidgetOperatorsRemove'
+    - { headers: { Authorization: 'Bearer foo-key' }, json: { widgetID: widget-id, userIDs: [user-id-1] } }
+-
+    - POST
+    - 'https://roomlio-api/RoomHistory'
+    - { headers: { Authorization: 'Bearer foo-key' }, json: { roomKey: sampleKey, startCursor: cursor-name } }
